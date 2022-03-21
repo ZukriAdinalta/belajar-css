@@ -1,0 +1,111 @@
+/* Animation */
+/* terdapat keyframe yang memungkinkan Anda untuk menentukan perubahan pada properti CSS dengan seiring waktu. */
+/* @keyframe digunakan untuk menentukan nilai properti untuk animasi itu sendiri secara bertahap, dan akan berubah dari gaya saat ini ke gaya baru pada waktu tertentu. */
+
+.animation{
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+h1{
+    text-align: center;
+}
+
+p{
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.kotak{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    animation: animasiKotak 2s ease; /* terjadi ketika reload web */
+    
+}
+/* .kotak:hover { animation: animasiKotak 2s ease; } */ /* bisa digunakan ketika mouse di arahkan ke box */
+
+
+/* Animation-iteration-count
+Properti animation-iteration-count digunakan untuk menentukan berapa kali animasi harus dijalankan.  */
+.kotak.dua{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    animation: animasiKotak 2s ease 2; /* 2x perulangan ketika di reload */
+    /* animation: animasiKotak 2s ease infinite;  */ /* infinete tidak ada batas perulangan */
+    
+}
+/* animation-direction 
+untuk mengatur apakah arah animasi harus diputar ke depan, belakang atau dalam siklus alternatif. */
+/*  normal -> Animasi diputar seperti biasa (ke depan). default
+    reverse ->  Animasi diputar dalam arah terbalik (mundur)
+    alternate ->  Animasi diputar terlebih dahulu, lalu mundur
+    alternate-reverse -> Animasi diputar mundur lebih dulu, lalu maju */
+.kotak.tiga{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    animation: animasiKotak 2s ease 3 reverse;
+}
+
+/* Animation-fill-mode
+Animasi CSS tidak memengaruhi suatu elemen sebelum keyframe pertama dimainkan atau setelah keyframe terakhir dimainkan. */
+    
+/* 
+    none ->  Nilai standar. Animasi tidak akan menerapkan gaya apa pun pada elemen sebelum atau setelah dijalankan
+    forwards -> Elemen akan mempertahankan nilai style yang diatur oleh keyframe terakhir (tergantung pada animation-direction dan animation-iteration-count)
+    backwards ->  Elemen akan mendapatkan nilai gaya yang diatur oleh keyframe pertama (tergantung pada animation-direction), dan mempertahankan ini selama periode penundaan animasi atau animation-delay
+    both -> Animasi akan mengikuti aturan untuk maju dan mundur, memperluas properti animasi di kedua arah */
+
+.kotak.empat{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    animation: animasiKotak 2s ease 4 reverse forwards;
+}
+
+/* animation-play-state	
+Mengatur apakah animasi sedang berjalan atau dihentikan sementara. biasanya harus gunakan javascript */
+/*  running - > jalan
+    paused -> berenti */
+
+.kotak.lima{
+
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    animation: animasiKotak 2s ease 4 reverse forwards paused;
+
+}
+
+/* Persentase mewakili persen durasi untuk animasi, yang berarti:
+
+0% mewakili titik awal animasi
+100% mewakili titik akhir
+50% mewakili titik tengah dan seterusnya */
+
+@keyframes animasiKotak{
+    0% { /* form / 0% Keadaan awal */
+        width: 300px; 
+    }
+    50%{ /* titik tengah dan seterusnya */
+        width: 400px;
+        height: 400px;
+    }
+    100% { /*to / 100% keadaan akhir  */
+        width: 500px;
+        height: 500px;
+        background-color: blue;
+
+    }
+}

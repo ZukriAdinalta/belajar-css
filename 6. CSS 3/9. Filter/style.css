@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(71, 68, 68);
+}
+.container{
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card{
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #eee;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+
+.card .header{
+    height: 200px;
+    background-color: #666;
+    
+}
+
+.card .content{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card.besar{
+    transform: scale(1.12);
+}
+
+/* filter */
+
+/* blur */
+/* untuk membuat gambar atau element menjadi blur */
+.header.dua{
+    filter: blur(10px);
+}
+
+/* brightness" */
+/* untuk mengatur brightness/Kecerahan pada element. */
+.header.empat{
+    filter: brightness(200%);
+}
+/* Contrast */
+.header.lima{
+    filter: contrast(200%);
+}
+
+/* Saturate
+Filter Saturate berfungsi untuk mengatur kekuatan warna dari gambar/element. */
+.header.enam{
+    filter: saturate(50%);
+}
+
+/* Grayscale
+Filter kedua ini berfungsi untuk mengubah element menjadi hitam putih. */
+.header.tujuh{
+    filter: grayscale(100%);
+}
+
+/* Sepia
+sepia yang akan membuat gambar/element menjadi kekuningan seperti foto jaman dulu. */
+.header.delapan{
+    filter: sepia(100%);
+}
+
+/* Hue-rotate
+Filter HUE ini berfungsi untuk mengatur nilai HUE dari suatu element, seperti disebeutkan sebelumnya, satuan yang digunakan adalah deg. */
+
+.header.sembilan{
+    filter: hue-rotate(40deg);
+}
+
+/* Invert
+Filter selanjutnya adalah Invert, filter ini akan merubah seluruh warna element menjadi kebalikannya, bayangkan saja film negatif. */
+.header.sepuluh{
+    filter: invert(100%);
+}
+
+/* opacity */
+/* membuat gambar elemen menjadi transparan */
+.header.sebelas{
+    filter: opacity(.50);
+}
+/* drop shadow */
+/*  */
+.header.duabelas{
+    filter: drop-shadow(10px 10px 50px black);
+}

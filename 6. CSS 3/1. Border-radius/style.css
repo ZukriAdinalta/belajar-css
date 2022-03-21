@@ -1,0 +1,58 @@
+
+.border-radius.satu{
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 300px;
+}
+
+/* Makin besar nilai border radius maka akan menjadi lingkaran */
+.border-radius.dua{
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(126, 36, 22);
+    border-radius: 150px; /* atau bisa dikasih 50% */
+    text-align: center;
+    line-height: 300px;
+    color: white;
+}
+
+/*  border-top-left-radius ( atas – kiri )
+    border-top-right-radius ( atas – kanan )
+    border-bottom-right-radius ( bawah – kanan )
+    border-bottom-left-radius ( bawah kiri ) */
+
+/* Jika properti border-radius memiliki empat nilai:
+    border-radius: 5px 10px 15px 20px;
+    border-radius atas 5px
+    border-radius kanan 10px
+    border-radius bawah 15px
+    border-radius kiri 20px */
+
+.border-radius.tiga{
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    /* border-top-left-radius: 50%;
+    border-bottom-right-radius: 150px; */
+    border-radius: 0 50% 0 50%;
+    text-align: center;
+    line-height: 300px;
+}
+/* Border Radius Image */
+.border-radius.empat{
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    background-image:url(img/gambar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: salmon;
+    border-radius: 50% 0 50% 0;
+    line-height: 300px;
+}

@@ -1,0 +1,43 @@
+/* Gradient */
+/* memberikan warna gradasi pada elemen */
+h1{
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* Gradient Linear */
+/* memberikan gradasi warna secara lurus. bukan property melaikan value untuk background-image */
+.linear1{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background-image: linear-gradient(red, rgb(219, 219, 23), #eaea , green);
+}
+
+/* menciptakan gradient dari bawah ke atas dan nilai positif mewakili rotasi searah jarum jam. Jika nilai negatif sebaliknya. Jadi 90deg menciptakan gradient dari kiri ke kanan. Berbeda dengan -90deg menciptakan gradient dari kanan ke kiri. */
+.linear2{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background: linear-gradient(-90deg, red, rgb(219, 219, 23));
+}
+
+/* Arah */
+/* to bottom -> atas ke bawah, to top -> bawah ke atas, to left -> dari kanan ke kiri, to right -> dari kiri ke kanan    */
+/* to left top -> kanan ke bawah, to left bottom -> kanan ke atas, to right top -> kiri ke bawah, to right bottom -> kiri ke atas */
+
+.linear3{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background: linear-gradient(to left bottom, red, rgb(27, 16, 177));
+}
+
+/* color stop */
+/* memberikan bobot warna yang berbeda */
+.linear4{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background: linear-gradient(to left, red 63%, rgb(27, 16, 177) 80%);
+}

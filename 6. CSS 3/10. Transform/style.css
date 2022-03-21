@@ -1,0 +1,103 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+}
+/* Transform */
+/* Manipulasi format visual dari elemen HTML */
+/* penulisan: scale(angka), scaleX(angka), scaleY(angka), 
+rotate(deg), rotateX(deg), rotateY(deg),
+skew(deg), skewX(deg), skewY(deg),
+translate(px), translateX(px), translateY(px).  */
+
+
+/* Scale */
+/*  menambahkan ukuran atau mengurangi ukuran pada elemen. */
+.scaler .kotak{
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    margin: 50px auto;
+    transition: 2s;
+
+}
+
+.scaler .kotak:hover{
+    font-size: 20px;
+    transform: scale(1.5, 2);
+}
+
+
+/* rotate */
+/* memutarkan elemen searah jarum jam. Bahkan menggunakan nilai negatif Anda bisa memutarkan elemen berlawanan searah jarum jam. */
+
+.rotate .kotak{
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    margin: 50px auto;
+    transition: 2s;
+
+}
+
+.rotate .kotak:hover{
+    font-size: 20px;
+    transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+    /* transform: rotate(90deg);
+    transform: rotate(-90deg); -> berlawanan jarum jam
+    transform: rotateX(90deg); */
+}
+
+/* skew() 
+Anda bisa mengubah kemiringan pada elemen. skew(X, Y), X berarti mengubah kemiringan untuk horizontal dan Y mengubah kemiringan untuk vertikal. */
+
+.skew .kotak{
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    margin: 50px auto;
+    transition: 2s;
+
+}
+
+.skew .kotak:hover{
+    font-size: 20px;
+    transform: skew(30deg) skewY(30deg);
+    /* transform: skew(30deg);
+    transform: skew(-30deg); -> berlawanan jarum jam */
+    
+}
+/*Translate*/
+/* Anda bisa memindahkan elemen dari posisi saat ini ke posisi baru di sepanjang sumbu X dan sumbu Y. translate(X, Y). X berarti mengatur posisi untuk horizontal dan Y mengatur posisi untuk vertikal. */
+.translate .kotak{
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    margin: 50px auto;
+    transition: 2s;
+
+}
+
+.translate .kotak:hover{
+    font-size: 20px;
+    /* transform: translate(-10px, -100px); */
+    transform: translate(10px, 100px); /* kekanan 10px dan kebawah 100px */
+    /*  */
+
+}
+
+/* menumpuk property */
+.dua .kotak{
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    margin: 50px auto;
+    transition: 2s;
+
+}
+
+.dua .kotak:hover{
+    font-size: 20px;
+    transform: scale(3) rotate(360deg);
+
+}

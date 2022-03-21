@@ -1,0 +1,33 @@
+/* Font-Face */
+/* rule dimana dpat memungkinkan terhubung ke font yg secara otomatis diambil dan di aktifkan dengan format .woff .eot .otf/ttf dan svg/svg2 */
+
+.google p{
+    font-family: 'Gwendolyn', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+ h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+.fontsquirell p{
+    font-family: "alex_brushregular", arial;
+    text-align: center;
+    font-size: 50px;
+}
+/* format ttf */
+@font-face {
+    font-family: "Alex Brush";
+    src: url('font/AlexBrush-Regular.ttf') format('truetype');
+}
+
+/* format woff */
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('font/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('font/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,31 @@
+/* penulisan css adalah " selector {property: value;} " */
+
+h1{
+    color: blue; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps; 
+}
+
+/* SELECTOR */
+/* selector adalah digunakan untuk memilih dan menapulasi elemen spesifik pada HTML */
+/* element html dipilih berdasarkan Tag, id, class dan pola/paterrn */
+
+/* font styling */
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif; /* menentukan dan merubah jenis font/tulisan yang digunakan pada teks */
+    font-size: 20px; /* menetukan ukuran font/tulisan pada teks. value:"px, % dan em" */
+    font-weight: bold; /* menentukan ketebalan dari font/tulisan yang digunakan pada teks. value: "light, normal, 100-900, bold dan bolder" */
+    font-variant: small-caps; /* menetukan apakah teks menapilkan dalam tulisan kecil atau tidak. value: normal dan small-caps */
+    font-style: oblique; /* untuk memberi gaya penulisan teks pada suatu element atau selector. value: italic, normal dan oblique*/
+    line-height: 50px; /* untuk mengatur jarak antar paragraf di dalam sebuah halaman website. value: normal, px dan em */
+}
+
+/* font shorthand/ lebih singkat */
+/* 
+ p{
+    font: italic normal bold 16px/18px Arial, Helvetica, sans-serif;
+} */
+
+    /* font: font-style="italic" font-variant="normal" font-weight ="bold" font-size="16px" line-height="18px" font-family="Arial, Helvetica, sans-serif" */ 
+ 
+ 

@@ -1,0 +1,25 @@
+/* RGBa - Red Green Blue Alpha*/
+/* Nilai warna RGBA adalah perpanjangan nilai warna RGB dengan saluran alfa - yang menentukan opasitas untuk warna.*/
+
+.rgba{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: rgba(255, 105, 0, 0.8);
+    position: relative;
+}
+/* HSLa - Hue, Saturation, Lightness, Alpha */
+/*  Hue->  merupakan derajat warna dengan nilai 0 sampai 360.
+    Saturation -> menyatakan seberapa “murni” sebuah warna. Nilai dari  persen 0% sampai dengan 100% 
+    Lightness -> atau kecerahan dari warna. Sama seperti Saturation, nilai Lightness berada dalam angka 0% sampai dengan 100%.
+    alpha -> akan membuat sebuah warna transparan (tembus pandang). nilai diantara 0 dan 1, dengan penulisan desimal seperti 0.5, 0.6, dan 0.9*/
+.hsla{
+    width: 100px ;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    background-color: hsla(266, 77%, 31%, 0.3);
+    
+}

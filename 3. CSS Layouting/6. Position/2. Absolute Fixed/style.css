@@ -1,0 +1,70 @@
+body{
+    height: 1000px;
+}
+div{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+
+}
+
+/* Absolute */
+/*  1. digunakan untuk membuat suatu elemen bisa dipindahkan dan membuat elemen mengambang ke atas dibanding element lain.
+    2. ketika kita menggerakan elemen dengan posisi absolute (menggunakan properti top, left, bottom dan right), ruang yang di tempati oleh elemen tersebut diagap tidak ada.
+    3. ketika kita menggerakan elemen dengan posisi absolute, elemen akan bergerak relatif terhadapa posisi dari elemen parent nya, selama elemen parentnya memiliki posisi yang juga non-static.
+    4. jik di beri properti top: 0; dan left: 0; maka elemen akan berada di ujung kiri atas dari elemen parentnya */
+.container{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border: 5px solid black;
+    position: relative;
+
+}
+.satu{
+    background-color: lightgreen;
+    position: static;
+}
+
+.dua{
+    background-color: violet;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.tiga{
+    background-color: gold;
+}
+
+/* Fixed */
+/*  Value fixed digunakan untuk membuat elemen mengambang di antara elemen elemen lain dan juga bisa dipindahkan posisinya.  */
+.container2{
+    width: 600px;
+    height: 400px;
+    margin: 5px auto;
+    border: 5px solid black;
+    position: relative;
+
+}
+
+.empat{
+    background-color: lightgreen;
+    position: static;
+}
+
+.lima{
+    background-color: violet;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+.enam{
+    background-color: gold;
+}

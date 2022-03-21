@@ -1,0 +1,51 @@
+.satu{
+    width: 280px; /* Mengatur Lebar */
+    height: 200px; /* Mengatu Panjang */
+    background-color: lightblue;
+}
+
+.dua{
+    width: 350px;
+    background-color: pink;
+}
+
+.tiga{
+    text-align: justify;
+}
+/* Auto / Otomatis*/
+/* properti overflow dengan nilai auto akan menambahkan scrollbar pada bagian tertentu jika hanya nilanya auto maka akan menmabahkan scrollbar secar vertikal. */
+.empat {
+    overflow: auto;
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+}
+/* hidden */
+/* hidden yang akan menyembunyikan konten seolah - olah konten seperti terpotong. */
+
+.lima {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-color: orange;
+}
+
+/* scrool */
+/* dengan begitu kita bisa melihat konten yang tersembunyi dengan cara di scrool.  */
+
+.enam {
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    background-color: bisque;
+}
+
+/* visible */
+/* Properti overflow dengan nilai visible menampilkan semua isi konten atau tidak terpotong walaupun elemen yang membungkus konten didalamnya tidak cukup muat.  */
+
+.tujuh {
+    width: 200px;
+    height: 100px;
+    overflow: visible;
+    background-color: darkkhaki;
+}

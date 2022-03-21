@@ -1,0 +1,254 @@
+/* flex box */
+/* Display Flex - tampilan fleksibel */
+/* Untuk membuat CSS flexbox sangat sederhana dan mudah untuk diterapkan, dengan memberikan style display: flex; pada container, */
+h1{
+    text-align: center;
+}
+.flex{
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex; /* atau inline-flex */
+}
+
+/* tidak perlu menggunakan ini cukup pakai display:flex; */
+/* 
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+
+.flex .satu, .dua, .tiga, .empat{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(83, 83, 235);
+    margin-right: 2px;
+    /* float: left; */
+}
+/* Flex Direction - Arah Fleksibel */
+/*  untuk menentukan arah (direction) untuk item-item yang berada didalam container flexbox. */
+/*  row – memberikan posisi secara horizontal dari Kiri ke Kanan (default)
+    row-reverse – memberikan posisi secara horizontal dari Kanan ke Kiri (Kebalikan dari row)
+    column – memberikan posisi secara vertikal dari Atas ke Bawah
+    column-reverse – memberikan posisi secara vertikal dari Bawah ke Atas (kebalikan dari column) */
+.flex-direction{
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse; 
+}
+
+.flex-direction .satu, .dua, .tiga, .empat{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(83, 83, 235);
+    margin-right: 2px;
+}
+
+/* Flex Wrap - Bungkus Fleksibel  */
+/*  untuk membuat item didalamnya apakah harus membungkus ke baris baru jika sudah memenuhi lebar dari containernya */
+/* nowrap – jangan dibungkus ke baris baru (default)
+    wrap – dibungkus ke baris baru
+    wrap-reverse – dibungkus ke baris baru tetapi dibalik (item terakhir jadi pertama ) */
+.flex-wrap{
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-wrap .satu, .dua, .tiga, .empat{
+    width: 120px;
+    height: 120px;
+    margin: 2px 2px;
+    background-color: rgb(83, 83, 235);
+}
+
+/* Justify Content - Membenarkan Konten */
+/* untuk menyelaraskan item dalam container disepanjang sumbu utama (main axis) seperti mengatur posisi item menjadi yang paling kiri, tengah, kanan dan bahkan bisa memberikan sisa kekosongan ruang dari container secara merata pada item didalamnya. */
+/*  flex-start – mengatur posisi disepanjang sumbu utama (main axis) dibagian  awal, dan ini nilai defaultnya
+    center – mengatur posisi disepanjang sumbu utama (main axis) dibagian tengah
+    flex-end – mengatur posisi disepanjang sumbu utama (main axis) dibagian akhir
+    space-between – mengatur posisi disepanjang sumbu utama (main axis) untuk meratakan item secara merata. Item paling kiri rata kiri, paling kanan menjadi rata-kanan dan item ditengah akan diposisinkan rata tengah
+    space-around – Sama seperti space-between hanya saja space-around akan memberikan ekstra ruang kosong pada bagian awal/kiri dan akhir/kanan */
+
+.justify-content{
+        width: 600px;
+        border: 3px solid black;
+        margin: 30px auto;
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+}
+    
+.justify-content .satu, .dua, .tiga, .empat{
+        width: 120px;
+        height: 120px;
+        margin: 2px 2px;
+        background-color: rgb(83, 83, 235);
+}
+
+/*  */
+/* untuk menyelaraskan item dalam container disepanjang sumbu silang (cross axis) seperti mengatur posisi item menjadi yang paling atas, tengah, bawah, juga bisa memberikan peregangan item untuk mengisi wadah dan menyelaraskan item fleksibel seperti garis dasarnya sejajar. */
+/*  stretch – mengatur posisi disepanjang sumbu silang (cross axis) untuk mengisi wadah (default)
+    flex-start – mengatur posisi disepanjang sumbu silang (cross axis) dibagian awal
+    center – mengatur posisi disepanjang sumbu silang (cross axis) dibagian tengah
+    flex-end – mengatur posisi disepanjang sumbu silang (cross axis) dibagian akhir
+    baseline – mengatur posisi disepanjang sumbu silang (cross axis) untuk menyelaraskan item seperti garis dasarnya sejajar */
+.align-items{
+    width: 600px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.align-items .satu, .dua, .tiga, .empat{
+    width: 120px;
+    height: 120px;
+    margin: 2px 2px;
+    background-color: rgb(83, 83, 235);
+}
+/* Align Content  */
+/* Align-content ini hampir sama dengan align-items, hanya saja align-content berlaku jika jumlah itemnya lebih dari satu baris. */
+/* stretch – mengatur posisi disepanjang sumbu silang (cross axis) untuk mengisi wadah (default)
+    flex-start – mengatur posisi disepanjang sumbu silang (cross axis) dibagian awal
+    center – mengatur posisi disepanjang sumbu silang (cross axis) dibagian tengah
+    flex-end – mengatur posisi disepanjang sumbu silang (cross axis) dibagian akhir
+    space-between – mengatur posisi disepanjang sumbu silang (cross axis) untuk meratakan item secara merata. Item yang terbungkus akan diposisikan paling atas sedangkan yang jatuh ke baris baru akan akan diposisikan paling bawah
+    space-around – Sama seperti space-between hanya saja space-around akan memberikan ekstra ruang kosong pada bagian awal/atas dan akhir/bawah */
+.align-content{
+    width: 600px;
+    height: 350px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.align-content .satu, .dua, .tiga, .empat{
+    width: 120px;
+    height: 120px;
+    margin: 2px 2px;
+    background-color: rgb(83, 83, 235);
+}
+/* Order */
+/* untuk memanipulasi urutan item, ketika kita menggunakan order atau reordering berarti bahwa kita mengubah render visual item, sementara sumber urutan tetap utuh. */
+.order{
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.order .satu, .dua, .tiga, .empat{
+    width: 120px;
+    height: 120px;
+    margin: 2px 2px;
+    background-color: rgb(83, 83, 235);
+}
+
+.order .satu{
+    order: 3;
+}
+.order .dua{
+    order: 1;
+    
+}
+.order .tiga{
+    order: 4;
+    
+}
+.order .empat{
+    order: 2;
+    
+}
+/* Flex Grow */
+/* Anda bisa menggunakannya untuk mengisi atau membagikan item terhadap sisa ruang container. Ini menentukan berapa jumlah ruang yang tersedia di dalam container fleksibel yang harus di isi item didalamnya. */
+
+.flex-grow{
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.flex-grow .satu, .dua, .tiga, .empat{
+    margin: 2px;
+    background-color: rgb(83, 83, 235);
+}
+
+.flex-grow .satu{
+    flex: 1;
+}
+.flex-grow .dua{
+    flex: 1;
+}
+.flex-grow .tiga{
+    flex: 3;
+}
+.flex-grow .empat{
+    flex: 1;
+}
+
+/* Align Self */
+/* untuk menyelaraskan item tertentu yang dipilih (individu). Sifat dari align-self menimpa keselarasan standar yang ditetapkan oleh wadah align-items. */
+/* stretch – mengatur posisi disepanjang sumbu silang (cross axis) untuk mengisi wadah (default)
+    flex-start – mengatur posisi disepanjang sumbu silang (cross axis) dibagian awal
+    center – mengatur posisi disepanjang sumbu silang (cross axis) dibagian tengah
+    flex-end – mengatur posisi disepanjang sumbu silang (cross axis) dibagian akhir
+    baseline – mengatur posisi disepanjang sumbu silang (cross axis) untuk menyelaraskan item seperti garis dasarnya sejajar */
+
+.align-self{
+    width: 600px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.align-self .satu, .dua, .tiga, .empat{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: rgb(83, 83, 235);
+}
+
+.align-self .satu{
+    align-self: center;
+}
+
+.align-self .dua{
+    align-self: flex-start;
+}
+
+.align-self .tiga{
+    align-self: flex-end;
+}
+
+.align-self .empat{
+    align-self: baseline;
+}

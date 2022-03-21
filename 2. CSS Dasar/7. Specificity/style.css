@@ -1,0 +1,29 @@
+/* p{
+    color: red;
+}
+
+p{
+    color: green;
+} */
+/* contoh diatas maka hasilnya green/ hijau karena hijau menipa warna merah maka hasil green. */
+
+
+#p1{
+    color: red;
+}
+
+p{
+    color: green;
+}
+
+/* contoh diatas maka hasinya color red/merah.karena #p1 lebih spesifik dari pada p. */
+
+ul#sarapan li a{
+    color: indianred;
+}
+
+.favorit a{
+    color: red;
+}
+
+/* contoh diatas maka hasinya color indianred.karena ul#sarapan li a lebih spesifik dari pada .favorit a.  */

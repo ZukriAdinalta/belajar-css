@@ -1,0 +1,54 @@
+.satu{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-left: 10px; /* Membuat ruang kosong atau spasi pada elemen bagian kiri. */
+    margin-top: 30px; /*  Membuat ruang kosong atau spasi pada elemen bagian atas. */
+    margin-bottom: 10px; /*  Membuat ruang kosong atau spasi pada elemen bagian bawah. */
+    margin-right: 20px;  /*  Membuat ruang kosong atau spasi pada elemen bagian kanan. */
+}
+/*  */
+.dua{
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    margin-top: -20px; /* Margin Negatif */
+}
+
+.tiga{
+    width: 50px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: violet;
+/* margin auto => nilai yang kita kasih kusus buat margin kiri dan kanan, akan membuat elemennya di tengah parentnya. */
+}
+
+/* shorthand/ singkatan */
+.empat{
+    width: 50px;
+    height: 50px;
+    margin: 50px; /* keempat sisi menjadi 50px */
+    background-color: yellow;
+}
+.lima{
+    width: 50px;
+    height: 50px;
+    margin: 50px auto; /* atas bawah 50px dan kiri kanan auto */
+    background-color: salmon;
+}
+
+.enam{
+    width: 50px;
+    height: 50px;
+    margin: 50px 30px 40px; /* 50px atas, 30px kiri dan kanan, 40px bawah */
+    background-color: red;
+}
+
+.tujuh{
+    width: 50px;
+    height: 50px;
+    margin: 50px 30px 40px 60px; /* 50px atas, 30px kanan, 40px bawah, 60px kiri */
+    background-color: red;
+}
+/*  */

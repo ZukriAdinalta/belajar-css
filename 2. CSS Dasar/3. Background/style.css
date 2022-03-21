@@ -1,0 +1,31 @@
+ 
+body{
+    background-color: lightblue; /* mengatur warna pada background */
+    background-image: url(bg.png); /* mengatur gambar yang akan digunakan pada background */
+    background-repeat: no-repeat; /* mengatur posisi gambar pada background value: no-repeat, repeat, repeat-x dan repeat-y*/
+    background-position: bottom center; /* mengatur jenis pengulangan pad background value: top left, top center, center left, center center, center right, bottom left, bottom center, bottom right, x% y%, x-pos y-pos*/
+} 
+
+
+/* shorthand/ singkatan */
+
+/* body{
+    background: lightblue url(bg.png) center repeat; 
+} */
+/* background: color url() position repeat */
+
+h1{
+    color: rgb(red, green, blue);
+    text-decoration: underline;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+/*rekomendasi gambar background: subtlepatterns.com */
+
+
+/* mengatur jenis pengulangan pad background */

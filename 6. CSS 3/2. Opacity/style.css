@@ -1,0 +1,22 @@
+/* opacty*/
+/* untuk mengatur transparansi sebuah element */
+
+.opacity{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: #f60;
+    opacity: 0.50; /* 0.50 = 50% atau penulisan bisa .50 atau .5 */
+    position: relative;
+}
+
+.satu{
+    width: 100px ;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    opacity: .5; /* maka hasil transparansinya 25% karena mengikuti parentnya yg sebesar 50% */
+    
+}

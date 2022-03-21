@@ -1,0 +1,61 @@
+h1{
+    text-align: center;
+    margin: 10px auto;
+}
+/* Gradient Radial */
+/* memberikan gradasi warna secara melingkar. bukan property melaikan value untuk background-image */
+.radial1{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background-image: radial-gradient(blue, rgb(219, 219, 23));
+}
+
+/* Multiple Color */
+.radial2{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background-image: radial-gradient(blue, yellow, red);
+}
+
+/* color stop */
+.radial3{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background-image: radial-gradient(blue 10%, yellow 20%, red 80%);
+}
+
+/* Type ->  ellipse dan circle */
+.radial4{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background-image: radial-gradient(ellipse, red, blue);
+}
+
+.radial5{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background-image: radial-gradient(circle, red, blue);
+}
+
+/* Jangkauan -> jarak dr pusat gradient ke sisi teluarnya */
+/* closest - corner -> sisi terjauh, closest - side -> sisi terdekat, */
+/* farthest - corner -> sudut terjauh, farthest - side -> sudut terdekat, */
+.radial6{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background-image: radial-gradient(circle closest-side, red, blue);   
+}
+
+/* Posisi -> memindakan pusat gradient */
+.radial7{
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    background-image: radial-gradient(circle farthest-side at top left, red, blue);   
+}

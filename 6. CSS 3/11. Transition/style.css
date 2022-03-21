@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+/* transition-duration */
+/* untuk menentukan berapa detik atau milidetik yang diperlukan untuk menyelesaikan efek transisi ( 5s untuk 5 detik dan 0.5 untuk 0,5 milidetik ). */
+
+.duration .kotak{
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: salmon;
+    transition: 6s;
+}
+
+.duration .kotak:hover{
+    transform: rotate(180deg);
+}
+
+
+/* Transition-property
+Properti transition-property digunakan untuk menentukan nama properti css mana yang akan digunakan untuk membuat sebuah transisi. */
+.property .kotak{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: all 2s;
+}
+.property{
+    width: 900px;
+    margin: 50px auto;
+    border: 4px solid black;
+
+
+}
+.property:hover .kotak{
+    transform: rotate(180deg);
+    margin-left: 800px ;
+    background-color: blue;
+
+}
+/* transition-timing-function */
+/* untuk menentukan kurva kecepatan efek transisi. */
+/*  ease – menentukan efek transisi dengan awal yang lambat, kemudian cepat, kemudian berakhir perlahan (ini adalah default)
+    linear – menentukan efek transisi dengan kecepatan yang sama dari awal sampai akhir
+    ease-in – menentukan efek transisi dengan awal yang lambat
+    ease-out – menentukan efek transisi dengan akhir yang lambat
+    ease-in-out – menentukan efek transisi dengan awal dan akhir yang lambat
+    cubic-bezier(n,n,n,n) – memungkinkan Anda menentukan nilai-nilai Anda sendiri dalam fungsi kubik-bezier */
+
+.function .kotak{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    margin: 10px 0 10px 0;
+    line-height: 100px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.function{
+    width: 900px;
+    margin: 50px auto;
+    border: 4px solid black;
+}
+.kotak.kotak1{ 
+    transition: 3s ease;
+}
+.kotak.kotak2{
+    transition: 3s ease-in;
+}
+
+.kotak.kotak3{
+    transition: 3s ease-out;
+}
+
+.kotak.kotak4{
+    transition: 3s ease-in-out;
+}
+
+.kotak.kotak5{
+    transition: 3s linear;
+}
+
+.kotak.kotak6{
+    transition: 3s cubic-bezier(0.48, 0.43, 0.96, 0.14); /* di browser  di inspect*/
+
+}
+.function:hover .kotak{
+    transform: rotate(180deg);
+    margin-left: 800px ;
+
+}
+
+/* Delay */
+/* Mengatur penundaan (dalam detik atau milidetik) untuk efek transisi */
+.delay .kotak{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: 3s 2s;  /* Tunggu 2s baru transisi dengan kecepatan 3s */
+   
+}
+.delay{
+    width: 900px;
+    margin: 50px auto;
+    border: 4px solid black;
+
+
+}
+.delay:hover .kotak{
+    transform: rotate(180deg);
+    margin-left: 800px ;
+    background-color: blue;
+
+}
+
+/* Transition shorthand */
+
+.shorthand .kotak{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: margin-left 3s, transform 3s 2s, background-color 2s 3s; 
+   
+}
+.shorthand{
+    width: 900px;
+    margin: 50px auto;
+    border: 4px solid black;
+
+
+}
+.shorthand:hover .kotak{
+    transform: rotate(180deg);
+    margin-left: 800px ;
+    background-color: blue;
+
+}

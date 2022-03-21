@@ -1,0 +1,64 @@
+body{
+    background-color: darkgray;
+}
+h1{
+    color: chocolate;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.hello:link{ 
+    /* style default pada sebuah link (a memiliki href) */
+    color: darkgreen;
+}
+
+.hello:hover{
+    /* style ketika cursol mouse berada diatas sebuah link/element */
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 20px;
+}
+
+.hello:active{
+    /* style berubah ketika link di klik (keadaan aktif) */
+    font-style: italic;
+}
+
+.hello:visited{
+    /* style ketika sebuah link telah pernah di kunjungi sebelumnya (menggunakan browser yang sama) */
+    color: blueviolet;
+}
+
+li:first-child a{
+    /* memilih elemen pertama dari sebuah parent (element pembungkusnya). css tolong carikan saya a dalam li yg merupakan anak pertama. */
+    color: green;
+}
+
+li:last-child a{
+    /* memilih element terakhir dari sebuah parent (element pemungkus). css tolong carikan saya a dalam li yg merupakan anak terakhir. */
+    color: red;
+}
+
+li:nth-child(4n) a{
+    color: purple;
+    /* memilih element ke-n dari sebuah parent (elemen pembungkusnya). n bisa berarti urutan (1), (2),... atau pola (2n), (3n+2), (4n-1) atau genap (even) &  ganjil (odd) */
+}
+
+li:nth-child(odd) a:hover{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p:first-of-type{
+    color: rebeccapurple;
+    /* memilih elemen pertama dari sebuah jenis / tipe tag */
+}
+
+p:last-of-type{
+    color: royalblue;
+    /* memilih elemen terakhir dari sebuah jenis / tipe tag */
+}
+
+
+
+
+

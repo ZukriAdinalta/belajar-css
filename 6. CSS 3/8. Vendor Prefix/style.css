@@ -1,0 +1,22 @@
+
+/* Vendor prefixes adalah cara yang digunakan oleh pengembang browser untuk menambahkan dukungan pada fitur baru CSS sebelum fitur tersebut sepenuhnya didukung semua browser. */
+
+/* Berikut ini adalah daftar vendor prefixes dan browser yang menggunakannya:
+-o- untuk browser lama Opera.
+-webkit- untuk browser Google Chrome, Opera versi terbaru dan hampir semua browser iOS.
+-moz- untuk browser Mozilla Firefox.
+-ms- untuk browser Microsoft Internet Explorer dan Microsoft Edge. */
+
+.gradredyellow {
+    height: 150px;
+    background-image: -moz-linear-gradient(red, yellow);
+    background-image: -o-linear-gradient(red, yellow);
+    background-image: -ms-linear-gradient(red, yellow);
+    background-image: -webkit-linear-gradient(red, yellow);
+    /* Penulisan CSS normal tanpa vendor prefixes */
+    background-image: linear-gradient(red, yellow);
+}
+
+img{
+    filter: grayscale(50%);
+}

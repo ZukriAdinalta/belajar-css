@@ -1,0 +1,118 @@
+/* Float */
+/* float adalah untuk mengatur text agar melipat di sekitar elemen image (gambar). Akan tetapi, float juga bisa digunakan untuk layout dan style lainnya. */
+
+.container{
+    width: 400px;
+    height: 200px;
+    border: 3px solid black;
+    margin: auto;
+    padding: 5px;
+
+}
+
+.satu, .dua, .tiga{
+    width: 100px;
+    height: 100px;
+}
+
+.satu{
+    background-color: salmon;
+    float: right;
+    /* Digunakan untuk menentukan bahwa sebuah elemen harus mengapung (float) disebelah kanan dari posisi containing block (elemen blok yang menampungnya). */
+}
+
+.dua{
+    background-color: greenyellow;
+    float: left;
+    margin-left: 10px;
+    /* untuk menentukan bahwa sebuah elemen harus mengapung (float) disebelah kiri dari posisi containing block (elemen blok yang menampungnya). */
+}
+
+.tiga{
+    background-color: lightskyblue;
+}
+
+/* Text Wrapping */
+/* membuat text mengelilingi gambar/elemen */
+
+.container2{
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    margin: auto;
+    padding: 5px;
+
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.container2 p{
+    text-align: justify;
+}
+
+/* Image Gallery*/
+/* membuat serangkaian gambar jadi galleri */
+
+.container3{
+    width: 600px;
+    height: 170px;
+    border: 3px solid black;
+    margin: auto;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+.kotak{
+    width: 80px;
+    height: 80px;
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+    margin: 2px;
+    float: left;
+
+}
+
+/* Multi-colum layout */
+/* membuat halaman memiliki beberapa kolom */
+
+.container4{
+    width: 800px;
+    border: 3px solid black;
+    margin: auto;
+    padding: 5px;
+    margin-top: 10px;
+    
+
+}
+
+.kiri {
+    width: 150px;
+    height: 500px;
+    background-color: salmon;
+    float: left;
+}
+
+
+.tengah {
+    width: 500px;
+    height: 500px;
+    background-color: lightskyblue;
+    float: left;
+}
+
+.kanan {
+    width: 150px;
+    height: 500px;
+    background-color: limegreen;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}

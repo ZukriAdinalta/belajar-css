@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+p{
+    color: rgb(115, 80, 212) ; /* memberi warna pada tulisan */
+    text-align: justify ; /* mengatur format pragraf/teks. value: right, left, justify dan center */
+    text-indent: 30px ; /* memberi indentasi pada paragraf /teks. value: px dan % */
+    text-decoration: overline ; /* mengatur dekorasi pada teks. value: none, underline, overline dan line-through */
+    text-transform: capitalize; /* mengubah jenis huruf menjadi besar, kecil / kapital. value:none, lowercase, uppercase, capitalize  */
+    letter-spacing: 1px; /* mengatur jarak antar huruf. value: px dan % */
+    word-spacing: 5px; /* mengatur jarak antar kata. value: px dan % */
+}
+
+a{
+    text-decoration: none;
+}
+/*  */

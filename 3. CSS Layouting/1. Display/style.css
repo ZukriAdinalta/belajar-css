@@ -1,0 +1,55 @@
+/* Display Inline / Tampilan Sebaris */
+/*  1. Elemen HTML yang secara default tidak menambahkan baris baru kerika di buat
+    2. lebar dan tinggi elemen nya sebesar konten yang ada di dalamanya
+    3. kita tdk dpt mengatur tinggi dan lebar elemen inline
+    4. margin dan padding hanya mempengaruhi elemen secara horizontal, tdk vertikel  */
+/* elemen inline => p, strong, i, em, span, sub, button, input, label, select, textarea */
+.navigasi a {
+    display: inline;
+    background-color: pink;
+}
+
+/* Display Inline Block / Tampilan Blok Sebaris */
+/*  1. tidak ada elemen yang secara defaut/bawaan memiliki properti display: inline-block.
+    2. kita harus ubah secara manual properti tersebut.
+    3. perilaku dasarnya sama dengan elemen inline
+    4. perbedaanya, elemen inline-block dapat diatur tinggi dan lebarnya. */
+
+.header h1{
+    display: inline-block;
+    background-color: orange;
+    height: 20px;
+}
+
+/* Display Block / Tampilan Blok */
+/*  1. elemen HTML yang secara default/bawaan menambahkan baris baru ketika dibuat
+    2. jika tidak diatur lebarnya, maka default/ bawaan dari elemen blok akan memenuhi lebar browser/ parentnya.
+    3. kita dapat mengatur tinggi dan lebar dari element blok
+    4. di dalam elemen blok, kita dapat menyimpan tag dgn elemen inline, inline-blok atau bahkan elemen blok lagi. */
+/* elemen block => h1-h6, p, ol, ul, li, from, hr, div.  */
+
+.main {
+    background-color: greenyellow;
+    display: block;
+}
+
+.main h2{
+    background-color: pink;
+}
+.main img{
+    width: 80px;
+    height: 80px;
+    
+}
+
+/* Display None / Tampilan Tidak Ada */
+/* Digunakan untuk menghilangkan sebuah elemen  */
+.copyright{
+    display: none;
+}
+
+/* Mengubah Display  */
+/*contoh mengubah display block jadi inline */
+.navigasi ul li{
+    display: inline;
+}

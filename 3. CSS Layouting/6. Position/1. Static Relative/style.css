@@ -1,0 +1,29 @@
+div{
+    width: 200px;
+    height: 200px;
+}
+
+/* Static */
+/*  1. static adalah nilai defaut dari tiap-tiap elemen kerika tidak diberi position.
+    2. menggunakan position selain static (non-static), akan membuat sebuah elemen menjadi seolah-olah berbeda dimensi dari elemen lainnya.
+    3. elemen yangdi berikan position selain static dapat menggunakan properti top, left, bottom dan right utk mengtur posisinya */
+.satu{
+    background-color: lightgreen;
+    position: static;
+}
+/* Relative */
+/*  1. relative digunakan untuk membuat suatu element bisa dipindah pindahkan.
+    2. ketika kita menggerakkan elemen dgn posisi relative (mengunakan properti top, left, bottom dan right), ruang yang di tempati oleh elemen masih ada.
+    3. ketika kita menggerakkan elemen dgn posisi relative, elemen akaan bergerak relatih terhadap posisi semulanya.
+    4. jika kita memberi properti top:0; dan left:0; makan elemen tdk berubah posisinya */
+.dua{
+    background-color: violet;
+    position: relative;
+    top: 30px;
+    left: 50px;
+
+}
+
+.tiga{
+    background-color: gold;
+}

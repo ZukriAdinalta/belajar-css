@@ -1,0 +1,290 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* style */
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+body{
+    background-color: gainsboro;
+}
+.container{
+    max-width: 1080px;
+    margin: 5px auto;
+    background-color: white;
+    padding: 5px;
+    overflow: hidden;
+}
+
+h1, h2{
+    color: white;
+}
+
+h1{
+    font-weight: bold;
+    font: 20px/20px arial;
+}
+
+h2{
+    font: 12px/18px arial;
+    padding-top: 5px;
+}
+
+.header{
+    background-color: crimson;
+    padding: 20px;
+
+}
+
+/* Menu */
+.navigasi ul{
+    background-color:darkorange;
+    padding: 3px 3px 3px 20px;
+    
+}
+
+.navigasi li{
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+.navigasi a {
+    text-decoration: none;
+    font: 15px/18px Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.navigasi a:hover{
+    color: #fff;
+    background-color: lightskyblue;
+    font-size: 18px;
+    padding: 2px;
+}
+
+/* banner Gambar */
+.banner{
+    height: 330px;
+    background-image: url(img/sate.jpg);
+    background-size: cover;
+    background-position: 0 -100px;
+    margin-bottom: 10px;
+}
+
+/* main content */
+.main{
+    padding: 5px;
+}
+
+.kiri{
+    width: 250px;
+    margin-right: 10px;
+    float: left;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.kiri p {
+    text-align: justify;
+    padding: 2px;
+}
+
+.kiri h3{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 13px;
+}
+
+
+.tengah{
+    width: 530px;
+    margin-right: 10px;
+    float: left;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.tengah img{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.tengah h3{
+    background: none;
+    color: crimson;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.tengah .terbit {
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 11px;
+}
+
+.tengah p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.kanan{
+    width: 250px;
+    float: left;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+.kanan img{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+}
+
+.kanan h4, p{
+    text-align: center;
+}
+
+.kanan h3{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 13px;
+}
+
+
+
+/* kanan bawah */
+.kanan-bawah{
+    width: 250px;
+    float: left;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.kanan-bawah h3{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 13px;
+}
+
+.kanan-bawah, .menu-artikel a{
+    text-decoration: none;
+    display: block;
+    padding: 13px;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.kanan-bawah a:hover{
+    color: darkorange;
+    border-bottom: 5px double chocolate;
+}
+
+.tanggal-posting
+{
+    color: gray;
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+}
+ 
+.tombol
+{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    width: 120px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+ 
+.tombol:hover
+{
+    background-color: black;
+    transition-duration: 2s;
+}
+ 
+.tombol-pesan
+{
+    background-color: green;
+}
+ 
+.tombol-lengkap
+{
+    background-color: darkorange;
+}
+
+
+/* footer */
+.footer{
+    background-color: #333;
+    clear: both;
+    padding: 10px;
+}
+
+.footer, .copy p{
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}

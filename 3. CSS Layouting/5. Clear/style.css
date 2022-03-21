@@ -1,0 +1,142 @@
+/* Clear */
+/* properti yang digunakan untuk membersihkan elemen yang sebelumnya telah mengalami float. */
+
+/* Cara menghentikan / membersihkan float */
+/*  1. Menggunakan properti overflow
+    2. mengunakan <div> kosong
+    3. menggnakan teknik micro clearlix*/
+
+/* Text Wrapping */
+/* membuat text mengelilingi gambar/elemen */
+
+.container2{
+    width: 400px;
+    border: 3px solid black;
+    margin: auto;
+    padding: 5px;
+    overflow: auto; 
+    /*  Menggunakan properti overflow */
+
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.container2 p{
+    text-align: justify;
+}
+
+
+/* Image Gallery*/
+/* membuat serangkaian gambar jadi galleri */
+
+.container3{
+    width: 600px;
+    border: 3px solid black;
+    margin: auto;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+.kotak{
+    width: 80px;
+    height: 80px;
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+    margin: 2px;
+    float: right;
+}
+
+.clear2{
+    clear: both;
+    /* mengunakan <div> kosong */
+}
+
+/* Multi-colum layout */
+/* membuat halaman memiliki beberapa kolom */
+
+.container4{
+    width: 800px;
+    border: 3px solid black;
+    margin: auto;
+    padding: 5px;
+    margin-top: 10px;
+    
+
+}
+
+.kiri {
+    width: 150px;
+    height: 500px;
+    background-color: salmon;
+    float: left;
+}
+
+
+.tengah {
+    width: 500px;
+    height: 500px;
+    background-color: lightskyblue;
+    float: left;
+}
+
+.kanan {
+    width: 150px;
+    height: 500px;
+    background-color: limegreen;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Menggunakan teknik micro clearfix. bisa codenya search di google  */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+ /**
+ * Untuk browser modern
+ * 1. Konten ruang adalah salah satu cara untuk menghindari bug Opera saat
+ * Atribut contenteditable disertakan di tempat lain dalam dokumen.
+ * Jika tidak, itu menyebabkan ruang muncul di bagian atas dan bawah elemen
+ * yang jelas tetap.
+ * 2. Penggunaan `table` dari pada `block` hanya diperlukan jika menggunakan
+ * `:before` untuk memuat margin atas elemen turunan.
+ */
+
+
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+  /**
+  * Untuk IE 6/7 saja
+  * Sertakan aturan ini untuk memicu hasLayout dan berisi float.
+  */
+ .cf {
+     *zoom: 1;
+ }

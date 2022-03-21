@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- deklerasi atau untuk mengidentifikasi jenis dokumen HTML -->
+<html>
+<head>  <!-- menampung informasi tambahan pada website  -->
+    <meta charset="utf-8"> <!-- Meta-tag tersebut digunakan untuk memberi instruksi kepada web browser , untuk menerjemahkan karakter di dalam HTML sebagai UTF-8. -->
+    <title> Belajar HTML </title>   
+</head>
+     <body>
+
+        <!-- Contoh Tag / Element => "<html></html>"   -->
+        <!-- contoh atrbut => "<html lang="atribut"></html>" -->
+
+<!-- Heading -->
+        <h1>Belajar Html h1 </h1> <!-- heading adalah memberi judul pada website dengan kode h1 sampai h6 yang paling besar adalah h1 -->
+        <h6>Beljar Html h6 </h6>
+
+<!-- Link -->
+        <a href="https://www.google.com">Klik Disini</a> <br> <!-- href untuk mengarahkan pada link contoh href= "https://www.google.com"  -->
+        <a href="https://www.youtube.com" target="_blank">Klik Disini</a> <!-- target="_blank" adalah ketika klik dia akan mengarahkan pada tab baru di browser -->
+
+<!-- Image -->
+        <img src="https://saintif.com/wp-content/uploads/2020/07/kartun2.jph" alt="Picaku"> <!-- alt berfungsi ketika img tidak bisa menampilkan gambar maka akan menapilkan tulisan di atribut alt  -->
+
+<!-- Tabel -->
+        <table border="1">
+            <tr> <!-- tabel row adalah baris  -->
+                <td>Nomor</td> <!-- tabel data adalah kolom -->
+                <td>Nama</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Zukri adinalta</td>
+            </tr>
+        </table> <br>
+
+<!-- form -->
+        <from action="#">
+        <label> <!-- label mengatukan satu komponen form dan text -->
+            Nama Lengkap : <br>
+            <input type="text" placeholder="Masukan Nama">
+        </label> <br>
+
+        <label>
+            Jenis Kelamin : <br>
+            <select>
+                <option>Pria</option>
+                <option>Wanita</option>
+            </select>
+        </label><br>
+
+        Skil :<br>
+        <label>
+            <input type="checkbox" > HTML
+            <input type="checkbox" > CSS
+        </label><br>
+
+        <label>
+            Pesan : <br>
+            <textarea cols="30" rows="10"></textarea>
+        </label> <br>
+
+            <input type="submit" placeholder="submit">
+        </from>
+
+<!-- Divion --> 
+        <div> <!-- Div / division adalah pembagian atau perkelompokan -->
+            //block <!-- Block akan membuat baris baru dan memisahkan diri dari tag di sekitarnya -->
+        </div>
+
+<!-- span --> 
+        <span>
+            //inline //inline <!-- inline tidak membuat baris baru dan menyatu dengan tag di sekitarnya -->
+        </span>
+
+<!-- ID dan Class -->
+        <div id="" class=""> 
+            <!-- ID merupakan selector yang digunakan oleh satu tag html, ini adalah yang disarankan, karena ID itu sendiri hanya boleh digunakan untuk satu tag html. -->
+            <!-- Class merupakan selector yang dapat kita digunakan oleh lebih dari satu tag html. Artinya beberapa tag html bisa menggunakan css dari class tersebut. -->
+        </div>
+
+    </body>
+</html>

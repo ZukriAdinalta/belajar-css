@@ -1,0 +1,48 @@
+/* padding => area transparan di dalam kotak  (antara konten dan border) penulisan syntax sama dengan margin*/
+
+/* perbedaan pedding dan margin */
+/*  1. padding tdk bisa di beri nilai negatif
+    2. padding tidak memiliki nilai auto
+    3. padding menambah nilai pada elemen */
+
+.satu{
+    width: 250px;
+    height: 250px;
+    background-color: lightskyblue;
+    margin: 20px auto;
+    padding: 20px 30px 20px 30px;
+}
+
+/* border => batas disekeliling contens dan padding */
+.dua{
+    width: 250px;
+    height: 250px;
+    background-color: lightskyblue;
+    margin: 20px auto;
+    padding: 20px 30px 20px 30px;
+    border: 2px dotted black; /* syntax: border: lebar style warna  */
+    /* style border : solid 'satu garis tegas', dotted 'garis titik-titik, dashed 'garis putus-putus' double 'dua garis tegas'*/
+}
+/* box-sizing adalah css property yang digunakan untuk merubah kalkulasi dalam mengukur lebar element. */
+.tiga{
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.p1{
+    background-color: royalblue;
+    padding: 10px;
+    border: 35px solid red;
+}
+.p2{
+    background-color: lightgreen;
+    padding: 30px;
+    border: 10px double orange;
+}
+/*  1. content-box => nilai default. Lebar dan tinggi (width dan height) hanya menyertakan content, tidak termasuk border, padding dan margin.
+    2. padding-box => Lebar dan tinggi (width dan height) berdasarkan padding (sudah termasuk padding) tetapi tidak termasuk border dan margin.
+    3. border-box => Lebar dan tinggi (width dan height) berdasarkan padding dan border (sudah termasuk padding dan border) tetapi tidak termasuk margin. */
+
+
+/* conten => konten sebenarnya dalam box, bisa berupa teks atau gambar. */

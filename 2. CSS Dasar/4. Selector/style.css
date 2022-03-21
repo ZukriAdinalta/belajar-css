@@ -1,0 +1,40 @@
+body{
+background: lightblue repeat-y ;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3{  /* separator => kita kasih koma , tanda komabisa diartikan dan */
+ text-align: center;
+ text-decoration: underline;
+ text-indent: 1px;
+}
+
+ul li a{ /* seprator mengunakan spasi, bisa di baca dengan css tolong tag a yang ada di dalam li yang ada di dalam ul */
+    color: red;
+}
+
+ol li a {
+    color: orangered;
+}
+
+#p1{ /* kalau id mengunakan tanda pagar "#", yang bisa di baca css tolong rubah id p1 */
+    color: rebeccapurple;
+}
+
+.p2{ /* kalau class mengunakan tanda titik ".", yang bisa di baca css tolong rubah class p2 */
+    color: brown;
+}
+
+.id a{
+    color: green;
+}
+
+.cetak-tebal {
+    color: slateblue;
+    font-weight: bold;
+}
+
+p.cetak-tebal{
+    font-size: 15px;
+}
+/*  */
